@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    height: 480px;
+}
+
+.choice{
+    padding: 45px;
+    
+}
+
+#choice1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+#choice2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#choice3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.choice h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform:uppercase ;
+    color: hsl(0, 0%, 95%) ;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.4em;
+}
+
+.choice p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height:1.5em ;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn{
+    width: fit-content;
+    background-color:hsl(0, 0%, 95%) ;
+    margin-top: 90px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+#choice1 .btn{
+    color: hsl(31, 77%, 52%);
+    border:2px solid hsl(31, 77%, 52%);
+}
+
+#choice2 .btn{
+    color:hsl(184, 100%, 22%) ;
+    border:2px solid hsl(184, 100%, 22%);
+    
+}
+
+#choice3 .btn{
+    color: hsl(179, 100%, 13%);
+    border:2px solid hsl(179, 100%, 13%);
+}
+
+#choice1 .btn:hover{
+    background-color: hsl(31, 77%, 52%);
+    border:2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);   
+}
+
+#choice2 .btn:hover{
+    background-color:hsl(184, 100%, 22%) ;
+    border:2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+#choice3 .btn:hover{
+    background-color: hsl(179, 100%, 13%);
+    border:2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {
+    font-size: 13px;
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:700px){
+
+    body{
+        align-items:center;
+        margin-top: 50px;
+    }
+
+    section{
+        flex-direction: column;
+        width: 80%;
+        margin-bottom: 900px;
+    }
+
+    #choice1{
+        border-radius: 10px 10px 0 0;
+    }
+        
+    #choice3{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width:375px){
+    section{
+        width: 90%;
+        margin-bottom: 980px;
+    }
+}
